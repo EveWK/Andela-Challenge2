@@ -7,7 +7,7 @@ parties = Blueprint('parties', __name__)
 class PartiesResource:
 
     @parties.route('/parties', methods=['POST'])
-    def post ():
+    def post():
         data = request.get_json(force=True)
 
         name = data['name']

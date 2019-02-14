@@ -18,7 +18,7 @@ class Party:
         }
         self.db.append(party)
         return self.db
-    #
+
     def get_all_parties(self):
         return self.db
 
