@@ -1,4 +1,8 @@
 .idea/
+ __pycache__
+ run.pyc
+ __init__.pyc
+=======
 run.pyc
 .env
 *.env
