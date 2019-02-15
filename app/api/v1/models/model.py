@@ -28,8 +28,13 @@ class Party:
     #     setattr(self)
     #     return self.view()
     #
-    # def delete(self):
-    #     del parties[self.name]
+    def delete(self, name):
+        party = {
+            "name": name,
+        }
+
+        self.db.append(party)
+        return self.db
     #
 
     #

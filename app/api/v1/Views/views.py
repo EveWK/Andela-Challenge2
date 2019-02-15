@@ -29,6 +29,17 @@ class PartiesResource:
             "parties": parties
         }))
 
+    @parties.route('/parties', methods=['DELETE'])
+    def delete ():
+        '''Method for deleting a user'''
+
+        parties = Party().delete(name= "")
+
+        return make_response(jsonify({
+                "message": "successfully deleted",
+                "parties": parties
+            }))
+
     # @parties.route('/parties', methods=['GET'])
     # def get():
     #
